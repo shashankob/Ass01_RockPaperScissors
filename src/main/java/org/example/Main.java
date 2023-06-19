@@ -33,11 +33,11 @@ public class Main {
         }
     }
 
-    public static boolean validMove(String move) {
+    static boolean validMove(String move) {
         return move.equals("R") || move.equals("P") || move.equals("S");
     }
 
-    public static String resultFinal (String moveA, String moveB) {
+    static String resultFinal (String moveA, String moveB) {
         if (moveA.equals(moveB)) {
             return "It's a tie!";
         } else if (moveA.equals("R")) {
